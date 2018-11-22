@@ -40,4 +40,10 @@ public class LoginGeneratorTest {
                 loginGenerator.generateLoginForNomAndPrenom("Dùrand", "Paul"));
     }
 
+    @Test
+    public void testGenerateLoginShortName() {
+        assertEquals("PDU",
+                loginGenerator.generateLoginForNomAndPrenom("Du", "Paul"));
+    }
+
 }
